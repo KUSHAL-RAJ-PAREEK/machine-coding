@@ -1,0 +1,179 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    html, body {
+      height: 100%;
+      width: 100%;
+            background-color: #101116;
+            scroll-behavior: smooth;
+
+    }
+
+
+    .main_vp{
+      width: 100%;
+      height: 100%;
+    }
+
+::-webkit-scrollbar {
+  display: none;                 
+}
+    .scroll_page{
+      width: 100%;
+      height: 100vh;
+      background-color: #101116;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .scroll_page p{
+      font-size: 25px;
+      font-weight: 500;
+      font-family: 'Lucida Sans';
+      color: #fff;
+    }
+
+    .page2{
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background-color: #101116;
+    }
+
+    .page3{  
+      position: relative;
+       width: 100%;
+      height: 20vh;
+      background-color: #101116;
+    }
+
+
+    .textsImg{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+ transform: translate(-50%,140%);
+       height: 200px;
+       transition: 0.1s ease;
+    }
+
+  .page2 img{
+    position: absolute;
+    height: 65px;
+  }
+
+  .instagram{
+    left: 40%;
+    transform: rotate(12deg);
+  }
+
+  .linkedin{
+    left: 17%;
+    top: -10%;
+
+  transform: rotate(-12deg);
+  }
+
+  .messenger{
+    left: 60%;
+    top: -5%;
+transform: rotate(15deg);
+  }
+
+  .mobie_logo{
+    left: 80%;
+    top: -7%;
+    transform: rotate(10deg);
+  }
+
+  .signal{
+    left: 25%;
+    top: -5%;
+  }
+
+  .slack{
+    left: 50%;
+        transform: rotate(-10deg);
+
+  }
+
+  .telegram{
+    left: 10%;
+        transform: rotate(5deg);
+  }
+
+  .x{
+    left: 70%;
+        transform: rotate(30deg);
+  }
+
+    .discord{
+    left: 32%;
+  }
+
+
+  .main_all{
+       position: absolute;
+      left: 50%;
+      top: 50%;
+ transform: translate(-50%,-200%);
+       height: 350px;
+       transition: 0.1s ease;
+       display: none;
+  }
+  .main_all img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .main_all p{
+    margin-top: 20px;
+     font-family: 'Lucida Sans';
+     font-size: 30px;
+     font-weight: 500;
+    text-align: center;
+    color: #fff;
+  }
+  @media (max-width:1070px) {
+      .textsImg{
+       height: 270px;
+      }
+  }
+
+
+    @media (max-width:1030px) {
+      .textsImg{
+       height: 350px;
+      }
+  }
+
+
+
+  @media (max-width:1000px) {
+      .textsImg{
+       height: 350px;
+      }
+  }
+  
+  @media (max-width:750px) {
+      .textsImg{
+       height: 400px;
+      }
+  }
+
+   @media (max-width:750px) {
+    .page2 img{
+      display: none;
+    }
+      .textsImg{
+       display: none;
+      }
+      .main_all{
+        display: block;
+      }
+  }
