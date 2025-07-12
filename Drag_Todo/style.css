@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+}
+
+html, body{
+    height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+header{
+    width: 100%;
+    background-color: #f8d4d7;
+}
+
+nav{
+    padding: 10px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav p{
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+nav button{
+    height: 35px;
+    position: relative;
+    z-index: 0;
+    padding: 5px;
+    background-color: #a9cdd8;
+    border: none;
+    color: aliceblue;
+    font-weight: 500;
+        transition: 0.4s ease;
+}
+
+nav button::after{
+    z-index: -1;
+    position: absolute;
+    content: '';
+    left: -65%;
+    top: -10%;
+    transform: translateX(60%);
+    width: 100%;
+       background-color: #BFDCE5;
+    height: 100%;
+    transition: 0.4s ease;
+}
+
+nav button:active::after{
+transform: scale(0.1);
+ left: 35%;
+}
+
+nav button:active{
+transform: scale(0.9);
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 107, 133);
+    display: flex;
+}
+
+.phase-1{
+    padding: 20px;
+    height: 100%;
+ flex:1;
+    background-color: #E6E6FA;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.phase-2{
+        padding: 20px;
+    height: 100%;
+    flex:1;
+    background-color: #FFE5B4;
+       display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.phase-3{
+        padding: 20px;
+    height: 100%;
+ flex:1;
+    background-color: #D8EFD3;
+       display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    margin: 10px 0;
+    width: 400px;
+    height: 200px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    cursor: grab;
+    position: static;
+    padding: 20px;
+}
+
+.progress{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(20, 153, 220);
+}
+
+.title{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.desc {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #747373;
+}
+
+.add_card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 20;
+    background-color: #fdc7c7;
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    padding: 30px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.add_card input{
+    margin-top: 10px;
+    height: 50px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+padding: 10px;
+outline: none;
+}
+
+.add_card button{
+    margin-top: 20px;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Cambria;
+    color: #6e5a5a;
+    background-color: #E6E6FA;
+}
+
+.add_card button:active{
+    transform: scale(0.9);
+}
