@@ -131,8 +131,12 @@ function mainFun(){
         isDragging = true;
         c.style.position = 'absolute';
         card = c;
-        offsetX = e.clientX - c.offsetLeft;
-        offsetY = e.clientY - c.offsetTop;
+          
+    offsetX = 40;
+    offsetY = 40;
+
+    c.style.left = `${e.clientX - offsetX}px`;
+    c.style.top = `${e.clientY - offsetY}px`;
     })
 
     c.addEventListener("mouseup", (e) => {
