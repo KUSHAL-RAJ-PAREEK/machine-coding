@@ -1,0 +1,57 @@
+.body,html{
+    width:100%;
+    height: 100%;
+    position: relative;
+    background-color: #FFC1CC;
+}
+
+.outercontainer{
+    position: absolute;
+      top: 50%;
+  left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.maincontainer{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    perspective: 600px;
+
+}
+
+.thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+}
+
+.thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+        background-color: #AEDFF7;
+        padding:10px;
+        border-radius: 10px;
+    color: black;
+}
+
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+     backface-visibility: hidden;
+    background-color: #FFDAB9;
+    color: black;
+            padding:10px;
+border-radius: 10px;
+
+    transform: rotateY(180deg);
+}
+
+.thecard:hover{
+    transform: rotateY(180deg);
+}
