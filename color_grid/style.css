@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.maincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #F08080;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    background-color: #B0E0E6;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.griditem{
+width: 100px;
+height: 100px;
+border-radius: 10px;
+background-color: #ffffff;
+transition: 0.4s ease;
+}
