@@ -15,3 +15,5 @@ https://grid-color-eta.vercel.app/
 https://calculator-brown-iota.vercel.app/
 
 https://3-d-cube-psi.vercel.app/
+
+https://comet-zoom-in-effect.vercel.app/
